@@ -1,4 +1,5 @@
-# ECG_detedt_OSA
+# ECG_detedt_OSAfuckfuckfuck
+
 
 ------------------------------------------
 This program is designed to recognize **Obstructive sleep apnea**. Using I²C connect MAX86150 with ARC EM9D board GMA303KU on board and Convolutional Neural Networks to recognize these diease.
