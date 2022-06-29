@@ -1,9 +1,7 @@
 # ECG_detedt_OSA
-# LSTM Human-Activity-Recognition
 
 ------------------------------------------
-This program is designed to recognize **human's activity**. Using 3-axis on board and neural network to recognize some basic human activities 
-like:*walking, standing, stting, laying, waiking upstairs and downstairs* 6 kinds of activity
+This program is designed to recognize **Obstructive sleep apnea**. Using I²C connect MAX86150 with ARC EM9D board GMA303KU on board and Convolutional Neural Networks to recognize these diease.
 
 * [Introduction](#introduction)
 * [Hardware and Software Setup](#hardware-and-software-setup)
