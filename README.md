@@ -17,21 +17,26 @@ This program is designed to recognize **Obstructive sleep apnea**. Using I²C co
 
 
 ## Introduction
-We use gpio to simulate UART to communicate with bluetooth module, Then transport realtime 3-axis accelerometer data to computer, Model on computer will give us 
-the result
-
-
-<img width="450" alt="PC2" src="https://user-images.githubusercontent.com/85031209/126856966-43509b72-73ea-45c5-972a-2d60e5660745.png">
-
-## Hardware and Software Setup
-### Required Hardware
-- 1 WE-I PLUS
-- 1 HC-05 bluetooth module(Baud Rate:115200 Role:0)
-- 1 Computer(need bluetooth)
+- 1 We use 3-axis accelerometer to determine user whether is go to sleep.
+- 2 Using I²C to trasport ECG data to ARC EM9D board.
+- 3 Using Convolutional Neural Networks model to recognize real time ECG data.
+- 4 Show the result to user.
 
 All hardware are in the picture following:
 
-![k1][0]
+<img width="450" alt="PC2" src="https://user-images.githubusercontent.com/87894572/176442424-26c242db-f6ff-4690-a84b-176652868726.png">
+
+## Hardware and Software Setup
+### Required Hardware
+-  ARC EM9D board
+-  MAX86150
+-  OLED1306
+
+All hardware are in the picture following:
+<img width="450" alt="PC2" src="https://user-images.githubusercontent.com/87894572/176450960-a8cc7ce9-5fe4-49f3-83ad-ed625e810ab7.png">
+
+
+
 
 ### Required Software
 - Metaware or ARC GNU Toolset
@@ -39,8 +44,7 @@ All hardware are in the picture following:
 - VirtualBox(Ubuntu 20.04)
 
 ### Hardware Connection
-1. WE-I PLUS and HC-05 connected by wire.
-2. Before using Human-Activity-Recognition, the bluetooth of the computer needs HC-05 to be connected first. If computer can't find the HC-05, then the HC-05 enters AT  mode to change the parameters.
+- ARC EM9D, MAX861150 and OLED1306 connected by wire.
 
 ## User Manual
 
